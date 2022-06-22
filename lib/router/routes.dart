@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:organico_exem_/Screen/Auth/Splash/splash_auth.dart';
 
 class MyRoutes{
    static final MyRoutes _instanse = MyRoutes.init();
@@ -9,7 +10,7 @@ class MyRoutes{
     var args = s.arguments;
     switch (s.name) {
       case '/splash':
-        // return MaterialPageRoute(builder: (_) => Splash());
+        return MaterialPageRoute(builder: (_) => SplashAuthPage());
       
     }
   }
