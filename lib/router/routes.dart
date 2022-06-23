@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:organico_exem_/Screen/Auth/Sign_In/forgot_pass_page.dart';
 import 'package:organico_exem_/Screen/Auth/Sign_In/sign_in_page.dart';
 import 'package:organico_exem_/Screen/Auth/Splash/splash_auth.dart';
 
@@ -14,6 +15,8 @@ class MyRoutes {
         return MaterialPageRoute(builder: (context) => SplashAuthPage());
       case "/sing_in":
         return MaterialPageRoute(builder: (context) => SignInPageAuth());
+      case "/forgot":
+        return MaterialPageRoute(builder: (context) => ForgotPasswordPage());
     }
   }
 }

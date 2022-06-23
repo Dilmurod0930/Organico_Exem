@@ -128,28 +128,47 @@ class _SignInPageAuthState extends State<SignInPageAuth> {
                                   return null;
                                 },
                               ),
-                              SizedBox(
-                                  height: MediaQuery.of(context).size.height *
-                                      0.040),
-                              Padding(
-                                padding: const EdgeInsets.only(left: 200),
-                                child: TextButton(
-                                  child: Text(
-                                    "Forgot password",
-                                    style: TextStyle(
-                                        fontSize: FontConst.kMediumFont,
-                                        fontWeight: FontWeight.w700,
-                                        color: ColorConst.greenConst),
-                                  ),
-                                  onPressed: () {
-                                    Navigator.pushNamedAndRemoveUntil(context,
-                                        "/forgot_pass", (route) => false);
-                                  },
-                                ),
-                              ),
                             ],
                           ),
                         ),
+                        SizedBox(
+                            height: MediaQuery.of(context).size.height * 0.040),
+                        Padding(
+                          padding: const EdgeInsets.only(left: 200),
+                          child: TextButton(
+                            child: Text(
+                              "Forgot password",
+                              style: TextStyle(
+                                  fontSize: FontConst.kMediumFont,
+                                  fontWeight: FontWeight.w700,
+                                  color: ColorConst.greenConst),
+                            ),
+                            onPressed: () {
+                              Navigator.pushNamed(context, '/forgot');
+                            },
+                          ),
+                        ),
+                        Container(
+                          height: MediaQuery.of(context).size.height * 0.060,
+                          width: MediaQuery.of(context).size.width * 0.9,
+                          decoration: BoxDecoration(
+                              color: ColorConst.redConst,
+                              borderRadius: BorderRadius.circular(25)),
+                          child: Center(
+                            child: TextButton(
+                              child: Text(
+                                "Sign In",
+                                style: TextStyle(
+                                    color: ColorConst.whiteConst,
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: FontConst.kMediumFont),
+                              ),
+                              onPressed: () {
+                                Navigator.pushNamed(context, "sign_in");
+                              },
+                            ),
+                          ),
+                        )
                       ],
                     ),
                   ),

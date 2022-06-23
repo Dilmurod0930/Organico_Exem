@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:organico_exem_/Screen/Auth/Cubit/auth_cubit.dart';
+import 'package:organico_exem_/core/constants/const.dart';
 import 'package:organico_exem_/router/routes.dart';
 
 void main() async {
@@ -29,7 +30,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(primarySwatch: Colors.blue),
+      theme: ThemeData(primarySwatch: Colors.blue, ),
       onGenerateRoute: MyRoutes.instanse.onGenerate,
       initialRoute: '/splash',
     );
