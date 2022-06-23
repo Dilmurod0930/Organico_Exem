@@ -6,6 +6,7 @@ class ColorConst {
   static Color blackConst = Colors.black;
   static Color yellowConst = Colors.yellow;
   static Color greyConst = Colors.grey;
+  static Color greenConst = Colors.green;
   static Color redConst = Colors.red;
 }
 
