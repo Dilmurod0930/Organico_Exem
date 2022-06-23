@@ -16,15 +16,12 @@ class AuthCubit extends Cubit<AuhtState> {
   bool obsecureText2 = false;
   bool isCheked = false;
   changeHiddenPass() {
-      isHidden = !isHidden;
-      emit(AuthInitial());
-    }
+    isHidden = !isHidden;
+    emit(AuthInitial());
   }
 
   closeEye(bool bool) {
     bool = !bool;
-    // emit(AuthInitial());
-
-    
-  
+    emit(AuthInitial());
+  }
 }

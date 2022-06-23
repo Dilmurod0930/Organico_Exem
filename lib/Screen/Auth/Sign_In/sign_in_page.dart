@@ -159,12 +159,13 @@ class _SignInPageAuthState extends State<SignInPageAuth> {
                               child: Text(
                                 "Sign In",
                                 style: TextStyle(
-                                    color: ColorConst.whiteConst,
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: FontConst.kMediumFont),
+                                  color: ColorConst.whiteConst,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: FontConst.kMediumFont,
+                                ),
                               ),
                               onPressed: () {
-                                Navigator.pushNamed(context, "sign_in");
+                                Navigator.pushNamed(context, "/sign_in");
                               },
                             ),
                           ),

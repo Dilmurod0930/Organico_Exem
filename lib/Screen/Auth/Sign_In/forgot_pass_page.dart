@@ -32,20 +32,27 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           SizedBox(
-                              height:
-                                  MediaQuery.of(context).size.height * 0.060),
+                            height: MediaQuery.of(context).size.height * 0.060,
+                          ),
                           Row(
-                            children: const [
-                              Icon(
-                                Icons.chevron_left,
-                                size: FontConst.kExtraLargeFont,
+                            children: [
+                              IconButton(
+                                onPressed: () {
+                                  Navigator.pushNamedAndRemoveUntil(
+                                      context, "/", (route) => false);
+                                },
+                                icon: const Icon(
+                                  Icons.chevron_left,
+                                  size: FontConst.kExtraLargeFont,
+                                ),
                               ),
-                              SizedBox(width: 55 ,),
-                              Text(
+                              const SizedBox(width: 55),
+                              const Text(
                                 "Forgot Password",
                                 style: TextStyle(
-                                    fontSize: FontConst.kLargeFont,
-                                    fontWeight: FontWeight.bold),
+                                  fontSize: FontConst.kLargeFont,
+                                  fontWeight: FontWeight.bold,
+                                ),
                               ),
                             ],
                           ),
@@ -90,7 +97,8 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
                                     fontSize: FontConst.kMediumFont),
                               ),
                               onPressed: () {
-                                Navigator.pushNamed(context, "sign_in");
+                                Navigator.pushNamedAndRemoveUntil(
+                                    context, '/regstrat', (route) => false);
                               },
                             ),
                           ),
