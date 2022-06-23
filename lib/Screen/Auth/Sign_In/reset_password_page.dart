@@ -43,7 +43,7 @@ class _ResetPasswordPageState extends State<ResetPasswordPage> {
                             IconButton(
                               onPressed: () {
                                 Navigator.pushNamedAndRemoveUntil(
-                                    context, "/", (route) => false);
+                                    context, "/otac_number", (route) => false);
                               },
                               icon: const Icon(
                                 Icons.chevron_left,

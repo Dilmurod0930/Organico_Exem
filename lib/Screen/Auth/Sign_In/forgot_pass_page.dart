@@ -98,7 +98,7 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
                               ),
                               onPressed: () {
                                 Navigator.pushNamedAndRemoveUntil(
-                                    context, '/regstrat', (route) => false);
+                                    context, '/otac_number', (route) => false);
                               },
                             ),
                           ),

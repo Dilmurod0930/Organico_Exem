@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:organico_exem_/Screen/Auth/Sign_In/otac_number.dart';
 import 'package:organico_exem_/Screen/Auth/Sign_In/forgot_pass_page.dart';
 import 'package:organico_exem_/Screen/Auth/Sign_Up/new_registration_page.dart';
 import 'package:organico_exem_/Screen/Auth/Sign_In/reset_password_page.dart';
@@ -21,8 +22,10 @@ class MyRoutes {
         return MaterialPageRoute(builder: (context) => ForgotPasswordPage());
       case "/reset_password":
         return MaterialPageRoute(builder: (context) => ResetPasswordPage());
-        case "/sign_in":
+      case "/sign_in":
         return MaterialPageRoute(builder: (context) => NewRegisrationPage());
+      case "/otac_number":
+        return MaterialPageRoute(builder: (context) => OTACNummberPage());
     }
   }
 }
