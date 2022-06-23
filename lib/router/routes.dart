@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:organico_exem_/Screen/Auth/Sign_In/forgot_pass_page.dart';
-import 'package:organico_exem_/Screen/Auth/Sign_In/new_registration_page.dart';
+import 'package:organico_exem_/Screen/Auth/Sign_Up/new_registration_page.dart';
 import 'package:organico_exem_/Screen/Auth/Sign_In/reset_password_page.dart';
 import 'package:organico_exem_/Screen/Auth/Sign_In/sign_in_page.dart';
 import 'package:organico_exem_/Screen/Auth/Splash/splash_auth.dart';

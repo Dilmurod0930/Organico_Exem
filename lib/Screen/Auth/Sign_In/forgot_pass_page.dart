@@ -39,7 +39,7 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
                               IconButton(
                                 onPressed: () {
                                   Navigator.pushNamedAndRemoveUntil(
-                                      context, "/", (route) => false);
+                                      context, "/sign_in", (route) => false);
                                 },
                                 icon: const Icon(
                                   Icons.chevron_left,

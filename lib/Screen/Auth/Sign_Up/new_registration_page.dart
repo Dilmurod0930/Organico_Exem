@@ -46,7 +46,7 @@ class _NewRegisrationPageState extends State<NewRegisrationPage> {
                           IconButton(
                             onPressed: () {
                               Navigator.pushNamedAndRemoveUntil(
-                                  context, "/", (route) => false);
+                                  context, "/sing_in", (route) => false);
                             },
                             icon: const Icon(
                               Icons.chevron_left,
@@ -157,7 +157,7 @@ class _NewRegisrationPageState extends State<NewRegisrationPage> {
                                   fontSize: FontConst.kMediumFont),
                             ),
                             onPressed: () {
-                              Navigator.pushNamed(context, "sign_in");
+                              Navigator.pushNamed(context, "/forgot");
                             },
                           ),
                         ),
@@ -185,7 +185,7 @@ class _NewRegisrationPageState extends State<NewRegisrationPage> {
                                   fontSize: FontConst.kMediumFont),
                             ),
                             onPressed: () {
-                              Navigator.pushNamed(context, "sign_in");
+                              Navigator.pushNamed(context, "/forgot");
                             },
                           ),
                         ),
