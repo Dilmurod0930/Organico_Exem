@@ -8,6 +8,19 @@ class ColorConst {
   static Color greyConst = Colors.grey;
   static Color greenConst = Colors.green;
   static Color redConst = Colors.red;
+  static Color purpleAccent = const Color.fromRGBO(170, 0, 35, 0.15);
+  static Color blueWhite = const Color(0xffE9F0F7);
+  static Color darkGrey = const Color(0xff696974);
+
+  static List colors = [
+    const Color.fromRGBO(170, 0, 35, 0.15),
+    const Color.fromRGBO(46, 204, 113, 0.15),
+    const Color.fromRGBO(234, 129, 47, 0.15),
+    const Color.fromRGBO(118, 178, 38, 0.15),
+    const Color.fromRGBO(151, 3, 29, 0.15),
+    const Color.fromRGBO(233, 176, 79, 0.15),
+    const Color.fromRGBO(63, 125, 60, 0.15)
+  ];
 }
 
 class PaddingMargenConst {

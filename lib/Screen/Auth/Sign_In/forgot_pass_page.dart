@@ -90,7 +90,7 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
                                 borderRadius: BorderRadius.circular(25)),
                             child: TextButton(
                               child: Text(
-                                "Sign In",
+                                "Next",
                                 style: TextStyle(
                                     color: ColorConst.whiteConst,
                                     fontWeight: FontWeight.bold,

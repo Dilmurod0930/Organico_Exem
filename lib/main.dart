@@ -3,6 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:organico_exem_/Screen/Auth/Cubit/auth_cubit.dart';
 import 'package:organico_exem_/Screen/Home/Bloc/cubit/main_cubit.dart';
+import 'package:organico_exem_/Screen/Home/home/cubit/main_home_cubit.dart';
 import 'package:organico_exem_/core/constants/const.dart';
 import 'package:organico_exem_/router/routes.dart';
 
@@ -19,7 +20,7 @@ void main() async {
       // BlocProvider(create: (context) => ChatCubit()),
       // BlocProvider(create: (context) => ChangePasswordCubit()),
       // BlocProvider(create: (context) => InfoCubit()),
-      // BlocProvider(create: (context) => HomeScreenCubit()),
+      BlocProvider(create: (context) => HomeScreenCubit()),
     ], child: const MyApp()),
   );
 }
