@@ -34,7 +34,6 @@ class HomeScreenCubit extends Cubit<MainHomeState> {
    List categoriesName = ['Vegetables', 'Fruits', 'Meats'];
     List categoriesList = [
     'assets/images/broccoli.png',
-    
     'assets/images/banana.svg',
 
     'assets/images/meat.svg'
