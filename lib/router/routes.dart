@@ -5,6 +5,7 @@ import 'package:organico_exem_/Screen/Auth/Sign_Up/new_registration_page.dart';
 import 'package:organico_exem_/Screen/Auth/Sign_In/reset_password_page.dart';
 import 'package:organico_exem_/Screen/Auth/Sign_In/sign_in_page.dart';
 import 'package:organico_exem_/Screen/Auth/Splash/splash_auth.dart';
+import 'package:organico_exem_/Screen/Home/main_navigator_page.dart';
 
 class MyRoutes {
   static final MyRoutes _instanse = MyRoutes.init();
@@ -26,6 +27,9 @@ class MyRoutes {
         return MaterialPageRoute(builder: (context) => NewRegisrationPage());
       case "/otac_number":
         return MaterialPageRoute(builder: (context) => OTACNummberPage());
+
+      case "/main":
+        return MaterialPageRoute(builder: (context) => MainNavigatorPage());
     }
   }
 }

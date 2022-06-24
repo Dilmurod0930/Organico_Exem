@@ -126,7 +126,7 @@ class _OTACNummberPageState extends State<OTACNummberPage> {
                           ),
                           onPressed: () {
                             Navigator.pushNamedAndRemoveUntil(
-                                context, '/', (route) => false);
+                                context, '/reset_password', (route) => false);
                           },
                         ),
                       ),

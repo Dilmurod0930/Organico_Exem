@@ -118,7 +118,8 @@ class _ResetPasswordPageState extends State<ResetPasswordPage> {
                                   fontSize: FontConst.kSmallFont),
                             ),
                             onPressed: () {
-                              Navigator.pushNamed(context, "sign_in");
+                              Navigator.pushNamedAndRemoveUntil(
+                                  context, '/main', (route) => false);
                             },
                           ),
                         ),
