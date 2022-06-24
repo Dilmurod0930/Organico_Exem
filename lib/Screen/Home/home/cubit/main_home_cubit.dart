@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:bloc/bloc.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:organico_exem_/Screen/Home/home/state/main_home_state.dart';
@@ -26,4 +28,14 @@ class HomeScreenCubit extends Cubit<MainHomeState> {
     emit(MainHomeSearch());
     debugPrint(item.name);
   }
+  int random = Random().nextInt(4);
+  static List<int> randoms = List.generate(4, (index) => Random().nextInt(4));
+
+   List categoriesName = ['Vegetables', 'Fruits', 'Meats'];
+    List categoriesList = [
+    'assets/images/broccoli.png',
+    'assets/images/banana.svg',
+    'assets/images/meat.svg'
+  ];
+
 }

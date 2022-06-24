@@ -55,40 +55,27 @@ class _HomeMainPageState extends State<HomeMainPage> {
                   ),
                   SizedBox(height: MediaQuery.of(context).size.height * 0.035),
                   InkWell(
-                      child: ListTile(
-                        contentPadding: const EdgeInsets.all(0),
-                        leading: SvgPicture.asset("assets/icons/cupon.svg"),
-                        trailing: SvgPicture.asset("assets/icons/right.svg"),
-                        title: listTitile("You have 3 coupon"),
-                        subtitle: listSubtitle("Let's use this coupon"),
-                      ),
-                      onTap: () {
-                        //! NavigationService.instance.pushNamed("coupon_page");
-                      }),
+                    child: ListTile(
+                      contentPadding: const EdgeInsets.all(0),
+                      leading: SvgPicture.asset("assets/icons/cupon.svg"),
+                      trailing: SvgPicture.asset("assets/icons/right.svg"),
+                      title: listTitile("You have 3 coupon"),
+                      subtitle: listSubtitle("Let's use this coupon"),
+                    ),
+                    onTap: () {
+                      //! NavigationService.instance.pushNamed("coupon_page");
+                    },
+                  ),
                   SizedBox(height: MediaQuery.of(context).size.height * 0.025),
                   beforeListCategoryHomeScreen("Choose Category", "vegetables"),
                   SizedBox(height: MediaQuery.of(context).size.height * 0.016),
                   SizedBox(
-                    height: MediaQuery.of(context).size.height * 0.134,
+                    height: MediaQuery.of(context).size.height * 0.154,
                     child: ListView.builder(
-                      // itemCount: vegetable.length,
+                      itemCount: 3,
                       scrollDirection: Axis.horizontal,
                       itemBuilder: (context, index) {
-                        return Row(
-                          children: [InkWell(
-                            child: contanerCategoty(
-                                "assets/images/broccoli.svg", "Vegetables"),
-                            onTap: () {
-                              //! NavigationService.instance.pushNamed(
-                              // !    "categories",
-                              // !    argument: Data.data[0]);
-                            },
-                          ),
-                          contanerCategoty(
-                              "assets/images/banana.svg", "Fruits"),
-                          contanerCategoty(
-                              "assets/images/broccoli.svg", "Vegetables"),],
-                        );
+                        return CategoriesWidget(index: index);
                       },
                     ),
                   ),
@@ -96,18 +83,12 @@ class _HomeMainPageState extends State<HomeMainPage> {
                   beforeListCategoryHomeScreen("Best Selling", ""),
                   SizedBox(height: MediaQuery.of(context).size.height * 0.016),
                   SizedBox(
-                    height: MediaQuery.of(context).size.height * 0.442,
+                    height: MediaQuery.of(context).size.height * 0.342,
                     child: ListView.builder(
                       // itemCount: vegetable.length,
                       scrollDirection: Axis.horizontal,
                       itemBuilder: (context, index) {
-                        return InkWell(
-                          child: bestProduct(index),
-                          onTap: () {
-                            // !NavigationService.instance.pushNamed("info_page",
-                            //     argument: vegetable[index]);
-                          },
-                        );
+                        return  CategoriesWidget(index: index);
                       },
                     ),
                   )
