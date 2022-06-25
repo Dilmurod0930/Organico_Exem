@@ -15,13 +15,23 @@ class CategoriesWidget extends StatelessWidget {
       padding: PaddingMargenConst.kMediumPM,
       child: InkWell(
         onTap: () {
-          debugPrint(HomeScreenCubit.randoms.toString());
+          if (index == 0) {
+            Navigator.pushNamedAndRemoveUntil(
+                context, "/vegetables", (route) => false);
+          } else if (index == 1) {
+            Navigator.pushNamedAndRemoveUntil(
+                context, "/fruit", (route) => false);
+          } else {
+            Navigator.pushNamedAndRemoveUntil(
+                context, "/meats", (route) => false);
+          }
         },
         child: Container(
-          height: MediaQuery.of(context).size.height * 0.16,
+          height: MediaQuery.of(context).size.height * 0.26,
           width: MediaQuery.of(context).size.width * 0.32,
-          // decoration: AllStyles.instance
-          //     .productStyel(color: context.watch<HomeScreenCubit>().colorList[index]),
+          decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(20),
+              color: ColorConst.yellowConst),
           child: Center(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,

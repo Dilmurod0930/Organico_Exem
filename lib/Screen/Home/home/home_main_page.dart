@@ -72,16 +72,17 @@ class _HomeMainPageState extends State<HomeMainPage> {
                   beforeListCategoryHomeScreen("Choose Category", "vegetables"),
                   SizedBox(height: MediaQuery.of(context).size.height * 0.016),
                   SizedBox(
-                    height: MediaQuery.of(context).size.height * 0.154,
+                    height: MediaQuery.of(context).size.height * 0.184,
                     child: ListView.builder(
                       itemCount: 3,
                       scrollDirection: Axis.horizontal,
                       itemBuilder: (context, index) {
                         return CategoriesWidget(index: index);
+                        
                       },
                     ),
                   ),
-                  SizedBox(height: MediaQuery.of(context).size.height * 0.048),
+                  SizedBox(height: MediaQuery.of(context).size.height * 0.028),
                   beforeListCategoryHomeScreen("Best Selling", "vegetables"),
                   SizedBox(height: MediaQuery.of(context).size.height * 0.016),
                   SizedBox(

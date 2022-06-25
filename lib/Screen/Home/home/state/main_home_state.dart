@@ -8,5 +8,5 @@ class MainHomeLoading extends MainHomeState {
   MainHomeLoading();
 }
 class MainHomeSearch extends MainHomeState {
-  MainHomeSearch();
+  MainHomeSeconst SizedBox(width: 55),arch();
 }

@@ -5,6 +5,9 @@ import 'package:organico_exem_/Screen/Auth/Sign_Up/new_registration_page.dart';
 import 'package:organico_exem_/Screen/Auth/Sign_In/reset_password_page.dart';
 import 'package:organico_exem_/Screen/Auth/Sign_In/sign_in_page.dart';
 import 'package:organico_exem_/Screen/Auth/Splash/splash_auth.dart';
+import 'package:organico_exem_/Screen/Home/home/view/categorya/fruits_home_category_pages.dart';
+import 'package:organico_exem_/Screen/Home/home/view/categorya/meats_home_category_page.dart';
+import 'package:organico_exem_/Screen/Home/home/view/categorya/vegerabls_home_category_page.dart';
 import 'package:organico_exem_/Screen/Home/home/view/cupon_home_view_page.dart';
 import 'package:organico_exem_/Screen/Home/main_navigator_page.dart';
 
@@ -28,12 +31,17 @@ class MyRoutes {
         return MaterialPageRoute(builder: (context) => NewRegisrationPage());
       case "/otac_number":
         return MaterialPageRoute(builder: (context) => OTACNummberPage());
-
       case "/main":
         return MaterialPageRoute(builder: (context) => MainNavigatorPage());
-
       case "/cupon":
         return MaterialPageRoute(builder: (context) => CuponHomePage());
+      case "/vegetables":
+        return MaterialPageRoute(
+            builder: (context) => VegetablesCategoryPage());
+      case "/fruit":
+        return MaterialPageRoute(builder: (context) => FruitsCategoryPage());
+      case "/meats":
+        return MaterialPageRoute(builder: (context) => MeatsCategoryPage());
     }
   }
 }
