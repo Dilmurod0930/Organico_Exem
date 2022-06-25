@@ -143,7 +143,8 @@ class _CartHomePageState extends State<CartHomePage> {
                                                 onTap: () {
                                                   setState(() {
                                                     if (son[index] != 0) {
-                                                      son[index] = son[index] - 1;
+                                                      son[index] =
+                                                          son[index] - 1;
                                                     }
                                                   });
                                                 },
@@ -239,9 +240,12 @@ class _CartHomePageState extends State<CartHomePage> {
                           decoration: BoxDecoration(
                               color: ColorConst.redConst,
                               borderRadius: BorderRadius.circular(20)),
-                          child: Center(child: Text("Add to bag")),
+                          child: const Center(child: Text("Add to bag")),
                         ),
-                        onTap: () {}),
+                        onTap: () {
+                          Navigator.pushNamedAndRemoveUntil(
+                              context, '/my_bag', (route) => false);
+                        },),
                   ],
                 ),
               ],

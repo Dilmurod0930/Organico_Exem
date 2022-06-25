@@ -5,6 +5,8 @@ import 'package:organico_exem_/Screen/Auth/Sign_Up/new_registration_page.dart';
 import 'package:organico_exem_/Screen/Auth/Sign_In/reset_password_page.dart';
 import 'package:organico_exem_/Screen/Auth/Sign_In/sign_in_page.dart';
 import 'package:organico_exem_/Screen/Auth/Splash/splash_auth.dart';
+import 'package:organico_exem_/Screen/Home/cart/cart_main_page.dart';
+import 'package:organico_exem_/Screen/Home/cart/my_bag_cart_page.dart';
 import 'package:organico_exem_/Screen/Home/home/view/categorya/fruits_home_category_pages.dart';
 import 'package:organico_exem_/Screen/Home/home/view/categorya/meats_home_category_page.dart';
 import 'package:organico_exem_/Screen/Home/home/view/categorya/vegerabls_home_category_page.dart';
@@ -42,6 +44,12 @@ class MyRoutes {
         return MaterialPageRoute(builder: (context) => FruitsCategoryPage());
       case "/meats":
         return MaterialPageRoute(builder: (context) => MeatsCategoryPage());
+      case "/my_bag":
+        return MaterialPageRoute(builder: (context) => CartMyBagPage());
+      case "/cart":
+        return MaterialPageRoute(builder: (context) => CartHomePage());
+        case "/my_order":
+        return MaterialPageRoute(builder: (context) => CartHomePage());
     }
   }
 }
