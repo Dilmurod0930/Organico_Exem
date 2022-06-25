@@ -8,6 +8,7 @@ import 'package:organico_exem_/core/widgets/contaner_categorya_widget.dart';
 import 'package:organico_exem_/core/widgets/home/list_tile_home_widget.dart';
 import 'package:organico_exem_/core/widgets/home/maxsulot_home_widget.dart';
 import 'package:organico_exem_/core/widgets/home/royxat_listtitle_home_widget.dart';
+import 'package:organico_exem_/core/widgets/pradukt/pradukt_home_widget.dart';
 import 'package:organico_exem_/service/data_service.dart';
 
 class HomeMainPage extends StatefulWidget {
@@ -86,7 +87,13 @@ class _HomeMainPageState extends State<HomeMainPage> {
                   SizedBox(height: MediaQuery.of(context).size.height * 0.016),
                   SizedBox(
                     height: MediaQuery.of(context).size.height * 0.342,
-                    child: Container(),
+                    child:  ListView.builder(
+                      itemCount: 3,
+                      scrollDirection: Axis.horizontal,
+                      itemBuilder: (context, index) {
+                        return PraduktHomeWidget(index: index);
+                      },
+                    ),
                   )
                 ],
               ),
