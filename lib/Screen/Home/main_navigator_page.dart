@@ -4,6 +4,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:organico_exem_/Screen/Home/Bloc/cubit/main_cubit.dart';
 import 'package:organico_exem_/Screen/Home/Bloc/state/main_state.dart';
 import 'package:organico_exem_/Screen/Home/home/home_main_page.dart';
+import 'package:organico_exem_/Screen/Home/search/search_main_page.dart';
 import 'package:organico_exem_/core/base/base_view.dart';
 import 'package:organico_exem_/core/constants/const.dart';
 
@@ -17,7 +18,7 @@ class MainNavigatorPage extends StatefulWidget {
 class _MainNavigatorPageState extends State<MainNavigatorPage> {
  final pages = [
     HomeMainPage(),
-    Container(),
+    ExploreMainPage(),
     Container(),
     Container()
   ];

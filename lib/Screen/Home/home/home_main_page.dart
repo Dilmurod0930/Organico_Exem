@@ -78,7 +78,6 @@ class _HomeMainPageState extends State<HomeMainPage> {
                       scrollDirection: Axis.horizontal,
                       itemBuilder: (context, index) {
                         return CategoriesWidget(index: index);
-                        
                       },
                     ),
                   ),
