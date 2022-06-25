@@ -11,9 +11,10 @@ class ProduckData {
   static List explotePrice = ["\$4.99 /Kg", "\$4.69 /Kg", "\$4.21 /Kg"];
 
   static List<Color> productColor = [
-     const Color(0xFFF2D9De),
     const Color(0xFFF2D9De),
     const Color(0xFFF2D9De),
-    const Color(0xFFF9F9Fa) 
+    const Color(0xFFF2D9De),
+    const Color(0xFFF9F9Fa)
   ];
+
 }
