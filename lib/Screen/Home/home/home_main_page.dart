@@ -6,10 +6,8 @@ import 'package:organico_exem_/Screen/Home/home/cubit/main_home_cubit.dart';
 import 'package:organico_exem_/Screen/Home/home/state/main_home_state.dart';
 import 'package:organico_exem_/core/widgets/contaner_categorya_widget.dart';
 import 'package:organico_exem_/core/widgets/home/list_tile_home_widget.dart';
-import 'package:organico_exem_/core/widgets/home/maxsulot_home_widget.dart';
 import 'package:organico_exem_/core/widgets/home/royxat_listtitle_home_widget.dart';
 import 'package:organico_exem_/core/widgets/pradukt/pradukt_home_widget.dart';
-import 'package:organico_exem_/service/data_service.dart';
 
 class HomeMainPage extends StatefulWidget {
   const HomeMainPage({Key? key}) : super(key: key);
@@ -19,8 +17,6 @@ class HomeMainPage extends StatefulWidget {
 }
 
 class _HomeMainPageState extends State<HomeMainPage> {
-  // var vegetable = Data.data[0];
-
   @override
   Widget build(BuildContext context) {
     return BlocBuilder<HomeScreenCubit, MainHomeState>(
