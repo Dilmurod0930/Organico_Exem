@@ -1,8 +1,8 @@
 import 'dart:math';
-
 import 'package:bloc/bloc.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:organico_exem_/Screen/Home/home/state/main_home_state.dart';
+import 'package:organico_exem_/core/constants/const.dart';
 
 class HomeScreenCubit extends Cubit<MainHomeState> {
   HomeScreenCubit() : super(MainHomeInitial());
@@ -32,11 +32,11 @@ class HomeScreenCubit extends Cubit<MainHomeState> {
   static List<int> randoms = List.generate(4, (index) => Random().nextInt(4));
 
    List categoriesName = ['Vegetables', 'Fruits', 'Meats'];
-    List categoriesList = [
-    'assets/images/broccoli.png',
+   List categoriesList = [
+    'assets/images/broccoli.svg',
     'assets/images/banana.svg',
-
-    'assets/images/meat.svg'
+    'assets/images/meat.svg',
   ];
+
 
 }

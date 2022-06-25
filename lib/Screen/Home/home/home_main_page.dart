@@ -8,6 +8,7 @@ import 'package:organico_exem_/core/widgets/contaner_categorya_widget.dart';
 import 'package:organico_exem_/core/widgets/home/list_tile_home_widget.dart';
 import 'package:organico_exem_/core/widgets/home/maxsulot_home_widget.dart';
 import 'package:organico_exem_/core/widgets/home/royxat_listtitle_home_widget.dart';
+import 'package:organico_exem_/service/data_service.dart';
 
 class HomeMainPage extends StatefulWidget {
   const HomeMainPage({Key? key}) : super(key: key);
@@ -80,16 +81,19 @@ class _HomeMainPageState extends State<HomeMainPage> {
                     ),
                   ),
                   SizedBox(height: MediaQuery.of(context).size.height * 0.048),
-                  beforeListCategoryHomeScreen("Best Selling", ""),
+                  beforeListCategoryHomeScreen("Best Selling", "vegetables"),
                   SizedBox(height: MediaQuery.of(context).size.height * 0.016),
                   SizedBox(
                     height: MediaQuery.of(context).size.height * 0.342,
-                    child: ListView.builder(
-                      // itemCount: vegetable.length,
-                      scrollDirection: Axis.horizontal,
-                      itemBuilder: (context, index) {
-                        return  CategoriesWidget(index: index);
-                      },
+                    child: SizedBox(
+                      height: MediaQuery.of(context).size.height * 0.28,
+                      child: ListView.builder(
+                        scrollDirection: Axis.horizontal,
+                        itemCount: DataService.instance.alldata[1].length,
+                        itemBuilder: (_, __) {
+                          return Container();
+                        },
+                      ),
                     ),
                   )
                 ],
