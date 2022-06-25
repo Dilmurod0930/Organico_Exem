@@ -11,6 +11,7 @@ class ColorConst {
   static Color purpleAccent = const Color.fromRGBO(170, 0, 35, 0.15);
   static Color blueWhite = const Color(0xffE9F0F7);
   static Color darkGrey = const Color(0xff696974);
+  static Color purpleColor = const Color(0xFFF2D9De);
 
   static List colors = [
     const Color.fromRGBO(170, 0, 35, 0.15),

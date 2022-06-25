@@ -5,6 +5,7 @@ import 'package:organico_exem_/Screen/Auth/Sign_Up/new_registration_page.dart';
 import 'package:organico_exem_/Screen/Auth/Sign_In/reset_password_page.dart';
 import 'package:organico_exem_/Screen/Auth/Sign_In/sign_in_page.dart';
 import 'package:organico_exem_/Screen/Auth/Splash/splash_auth.dart';
+import 'package:organico_exem_/Screen/Home/home/view/cupon_home_view_page.dart';
 import 'package:organico_exem_/Screen/Home/main_navigator_page.dart';
 
 class MyRoutes {
@@ -30,6 +31,9 @@ class MyRoutes {
 
       case "/main":
         return MaterialPageRoute(builder: (context) => MainNavigatorPage());
+
+      case "/cupon":
+        return MaterialPageRoute(builder: (context) => CuponHomePage());
     }
   }
 }

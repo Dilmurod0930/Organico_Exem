@@ -165,7 +165,7 @@ class _SignInPageAuthState extends State<SignInPageAuth> {
                                 ),
                               ),
                               onPressed: () {
-                                Navigator.pushNamed(context, "/sign_in");
+                                Navigator.pushNamed(context, "/main");
                               },
                             ),
                           ),

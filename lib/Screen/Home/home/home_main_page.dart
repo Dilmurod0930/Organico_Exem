@@ -64,7 +64,8 @@ class _HomeMainPageState extends State<HomeMainPage> {
                       subtitle: listSubtitle("Let's use this coupon"),
                     ),
                     onTap: () {
-                      //! NavigationService.instance.pushNamed("coupon_page");
+                      Navigator.pushNamedAndRemoveUntil(
+                          context, '/cupon', (route) => false);
                     },
                   ),
                   SizedBox(height: MediaQuery.of(context).size.height * 0.025),
@@ -85,16 +86,7 @@ class _HomeMainPageState extends State<HomeMainPage> {
                   SizedBox(height: MediaQuery.of(context).size.height * 0.016),
                   SizedBox(
                     height: MediaQuery.of(context).size.height * 0.342,
-                    child: SizedBox(
-                      height: MediaQuery.of(context).size.height * 0.28,
-                      child: ListView.builder(
-                        scrollDirection: Axis.horizontal,
-                        itemCount: DataService.instance.alldata[1].length,
-                        itemBuilder: (_, __) {
-                          return Container();
-                        },
-                      ),
-                    ),
+                    child: Container(),
                   )
                 ],
               ),
@@ -113,26 +105,3 @@ class _HomeMainPageState extends State<HomeMainPage> {
     });
   }
 }
-
-
-
-/*SingleChildScrollView(
-                      scrollDirection: Axis.horizontal,
-                      child: Row(
-                        children: [
-                          InkWell(
-                            child: contanerCategoty(
-                                "assets/images/broccoli.svg", "Vegetables"),
-                            onTap: () {
-                              //! NavigationService.instance.pushNamed(
-                              // !    "categories",
-                              // !    argument: Data.data[0]);
-                            },
-                          ),
-                          contanerCategoty(
-                              "assets/images/banana.svg", "Fruits"),
-                          contanerCategoty(
-                              "assets/images/broccoli.svg", "Vegetables"),
-                        ],
-                      ),
-                    ), */
