@@ -8,6 +8,7 @@ class ColorConst {
   static Color greyConst = Colors.grey;
   static Color greenConst = Colors.green;
   static Color redConst = Colors.red;
+  static Color bottonRed = Color(0xFFAA0023);
   static Color purpleAccent = const Color.fromRGBO(170, 0, 35, 0.15);
   static Color blueWhite = const Color(0xffE9F0F7);
   static Color darkGrey = const Color(0xff696974);

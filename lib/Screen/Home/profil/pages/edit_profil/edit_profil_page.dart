@@ -6,19 +6,18 @@ import 'package:organico_exem_/Screen/Home/home/state/main_home_state.dart';
 import 'package:organico_exem_/core/base/base_view.dart';
 import 'package:organico_exem_/core/constants/const.dart';
 
-class CustomerServiceProfilPage extends StatefulWidget {
-  const CustomerServiceProfilPage({Key? key}) : super(key: key);
+class EditProfilePage extends StatefulWidget {
+  const EditProfilePage({Key? key}) : super(key: key);
 
   @override
-  State<CustomerServiceProfilPage> createState() =>
-      _CustomerServiceProfilPageState();
+  State<EditProfilePage> createState() => _EditProfilePageState();
 }
 
-class _CustomerServiceProfilPageState extends State<CustomerServiceProfilPage> {
+class _EditProfilePageState extends State<EditProfilePage> {
   @override
   Widget build(BuildContext context) {
-    return BaseView(
-        viewModal: CustomerServiceProfilPage,
+    return  BaseView(
+        viewModal: EditProfilePage,
         onPageBuildre: (context, widget) {
           return BlocBuilder<HomeScreenCubit, MainHomeState>(
               builder: (context, state) {
@@ -30,7 +29,7 @@ class _CustomerServiceProfilPageState extends State<CustomerServiceProfilPage> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        const SizedBox(height: 24),
+                     const    SizedBox(height: 24),
                         Row(
                           children: [
                             IconButton(
@@ -39,16 +38,13 @@ class _CustomerServiceProfilPageState extends State<CustomerServiceProfilPage> {
                                       context, '/profil', (route) => false);
                                 },
                                 icon: const Icon(Icons.chevron_left)),
-                            const Text(
-                              "Customer Service ",
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                  fontSize: FontConst.kMediumFont + 2,
-                                  fontWeight: FontWeight.w600),
-                            ),
+                            const Text("Edit Profile ",
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                    fontSize: FontConst.kMediumFont + 2,
+                                    fontWeight: FontWeight.w600)),
                           ],
                         ),
-                        //!  Chala Page
                       ],
                     ),
                   ),

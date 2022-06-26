@@ -17,7 +17,7 @@ import 'package:organico_exem_/Screen/Home/profil/notification/notfication_setti
 import 'package:organico_exem_/Screen/Home/profil/notification/notification_profil_page.dart';
 import 'package:organico_exem_/Screen/Home/profil/pages/change_passworde_profil_page.dart';
 import 'package:organico_exem_/Screen/Home/profil/pages/customer_servis_profil_page.dart';
-import 'package:organico_exem_/Screen/Home/profil/pages/edit_profil_page.dart';
+import 'package:organico_exem_/Screen/Home/profil/pages/edit_profil/edit_profil_page.dart';
 import 'package:organico_exem_/Screen/Home/profil/pages/my_addres_profil_page.dart';
 import 'package:organico_exem_/Screen/Home/profil/pages/my_orders_profil_page.dart';
 import 'package:organico_exem_/Screen/Home/profil/pages/payment_mothos_profil_page.dart';
