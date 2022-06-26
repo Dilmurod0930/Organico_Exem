@@ -24,7 +24,10 @@ class MainProfilNotificationPage extends StatelessWidget {
                       Row(
                         children: [
                           IconButton(
-                              onPressed: () {},
+                              onPressed: () {
+                                Navigator.pushNamedAndRemoveUntil(context,
+                                    '/profil', (route) => false);
+                              },
                               icon: const Icon(Icons.chevron_left)),
                           const Text("Notification",
                               style: TextStyle(
@@ -38,8 +41,7 @@ class MainProfilNotificationPage extends StatelessWidget {
                           size: 22,
                         ),
                         onTap: () {
-                          Navigator.pushNamed(
-                              context, '/'); //! Hali tugamadi  bu page
+                          Navigator.pushNamedAndRemoveUntil(context, '/notifi_setting', (route) => false); //! Hali tugamadi  bu page
                         },
                       )
                     ],
