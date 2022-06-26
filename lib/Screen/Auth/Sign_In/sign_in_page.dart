@@ -148,27 +148,31 @@ class _SignInPageAuthState extends State<SignInPageAuth> {
                             },
                           ),
                         ),
-                        Container(
-                          height: MediaQuery.of(context).size.height * 0.060,
-                          width: MediaQuery.of(context).size.width * 0.9,
-                          decoration: BoxDecoration(
-                              color: ColorConst.redConst,
-                              borderRadius: BorderRadius.circular(25)),
-                          child: Center(
-                            child: TextButton(
-                              child: Text(
-                                "Sign In",
-                                style: TextStyle(
-                                  color: ColorConst.whiteConst,
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: FontConst.kMediumFont,
+                        InkWell(
+                          child: Container(
+                            height: MediaQuery.of(context).size.height * 0.060,
+                            width: MediaQuery.of(context).size.width * 0.9,
+                            decoration: BoxDecoration(
+                                color: ColorConst.redConst,
+                                borderRadius: BorderRadius.circular(25)),
+                            child: Center(
+                              child: TextButton(
+                                child: Text(
+                                  "Sign In",
+                                  style: TextStyle(
+                                    color: ColorConst.whiteConst,
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: FontConst.kMediumFont,
+                                  ),
                                 ),
+                                onPressed: () {},
                               ),
-                              onPressed: () {
-                                Navigator.pushNamed(context, "/main");
-                              },
                             ),
                           ),
+                          onTap: () {
+                            Navigator.pushNamedAndRemoveUntil(
+                                context, '/main', (route) => false);
+                          },
                         )
                       ],
                     ),
