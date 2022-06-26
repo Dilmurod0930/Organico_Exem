@@ -12,6 +12,7 @@ import 'package:organico_exem_/Screen/Home/home/view/categorya/meats_home_catego
 import 'package:organico_exem_/Screen/Home/home/view/categorya/vegerabls_home_category_page.dart';
 import 'package:organico_exem_/Screen/Home/home/view/cupon_home_view_page.dart';
 import 'package:organico_exem_/Screen/Home/main_navigator_page.dart';
+import 'package:organico_exem_/Screen/Home/profil/profil_main_page.dart';
 
 class MyRoutes {
   static final MyRoutes _instanse = MyRoutes.init();
@@ -48,8 +49,10 @@ class MyRoutes {
         return MaterialPageRoute(builder: (context) => CartMyBagPage());
       case "/cart":
         return MaterialPageRoute(builder: (context) => CartHomePage());
-        case "/my_order":
+      case "/my_order":
         return MaterialPageRoute(builder: (context) => CartHomePage());
+         case "/profil":
+        return MaterialPageRoute(builder: (context) => MainProfilePage());
     }
   }
 }
