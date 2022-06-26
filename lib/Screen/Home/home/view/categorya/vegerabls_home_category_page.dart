@@ -44,9 +44,11 @@ class VegetablesCategoryPage extends StatelessWidget {
                         ),
                       ),
                       IconButton(
-                        icon: const Icon(Icons.abc),
-                        onPressed: () {},
-                      )
+                          onPressed: () {
+                            Navigator.pushNamedAndRemoveUntil(
+                                context, "/main", (route) => false);
+                          },
+                          icon: SvgPicture.asset("assets/icons/filter.svg")),
                     ],
                   ),
                   Container(

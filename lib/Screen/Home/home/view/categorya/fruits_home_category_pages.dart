@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';import 'package:organico_exem_/Screen/Home/home/cubit/main_home_cubit.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_svg/svg.dart';import 'package:organico_exem_/Screen/Home/home/cubit/main_home_cubit.dart';
 import 'package:organico_exem_/Screen/Home/home/state/main_home_state.dart';
 import 'package:organico_exem_/core/constants/const.dart';
 
@@ -43,9 +44,11 @@ class FruitsCategoryPage extends StatelessWidget {
                         ),
                       ),
                       IconButton(
-                        icon: const Icon(Icons.abc),
-                        onPressed: () {},
-                      )
+                          onPressed: () {
+                            Navigator.pushNamedAndRemoveUntil(
+                                context, "/main", (route) => false);
+                          },
+                          icon: SvgPicture.asset("assets/icons/filter.svg")),
                     ],
                   ),
                

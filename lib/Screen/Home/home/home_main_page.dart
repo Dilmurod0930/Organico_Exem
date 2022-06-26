@@ -48,7 +48,7 @@ class _HomeMainPageState extends State<HomeMainPage> {
                           borderRadius: BorderRadius.circular(100),
                         )),
                     onTap: () {
-                      context.read<HomeScreenCubit>().moveToSearchPage();
+                      // context.read<HomeScreenCubit>().moveToSearchPage();
                     },
                   ),
                   SizedBox(height: MediaQuery.of(context).size.height * 0.035),
