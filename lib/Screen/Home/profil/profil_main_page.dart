@@ -34,7 +34,7 @@ class _MainProfilePageState extends State<MainProfilePage> {
                                 "assets/icons/notification.svg"),
                             onTap: () {
                               Navigator.pushNamed(
-                                  context, '/'); //! Hali tugamadi  bu page
+                                  context, '/notifi'); //! Hali tugamadi  bu page
                             })
                       ]),
                 ),
@@ -65,7 +65,7 @@ class _MainProfilePageState extends State<MainProfilePage> {
                 bolmlar("payment", "Payment Methos", ""),
                 bolmlar("customer_service", "Customer Service", "servis"),
                 bolmlar("change_password", "Change Password", "chang_password"),
-                bolmlar("logout", "Logout", "logout"),
+                bolmlar("logout", "Logout", "/sing_in"),
               ],
             ),
           ),
@@ -92,7 +92,7 @@ class _MainProfilePageState extends State<MainProfilePage> {
         ),
       ),
       onTap: () {
-        // NavigationService.instance.pushNamed(routeName);
+        Navigator.pushNamedAndRemoveUntil(context, routeName, (route) => false);
       },
     );
   }
