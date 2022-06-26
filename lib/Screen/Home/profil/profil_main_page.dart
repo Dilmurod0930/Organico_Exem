@@ -33,8 +33,8 @@ class _MainProfilePageState extends State<MainProfilePage> {
                             child: SvgPicture.asset(
                                 "assets/icons/notification.svg"),
                             onTap: () {
-                              Navigator.pushNamed(
-                                  context, '/notifi'); //! Hali tugamadi  bu page
+                              Navigator.pushNamed(context,
+                                  '/notifi'); //! Hali tugamadi  bu page
                             })
                       ]),
                 ),
@@ -59,13 +59,13 @@ class _MainProfilePageState extends State<MainProfilePage> {
                         color: ColorConst.greyConst)),
                 SizedBox(height: MediaQuery.of(context).size.height * 0.044),
                 bolmlar("edit_profile", "Edit Profile", "/edit_profil"),
-                bolmlar("my_orders", "My orders", "my_order"),
+                bolmlar("my_orders", "My orders", "/profil_order"),
                 bolmlar("my_wishlist", "My Wishlist", "wishlist"),
-                bolmlar("address", "My Address", "adres"),
-                bolmlar("payment", "Payment Methos", ""),
-                bolmlar("customer_service", "Customer Service", "servis"),
-                bolmlar("change_password", "Change Password", "chang_password"),
-                bolmlar("logout", "Logout", "/sing_in"),
+                bolmlar("address", "My Address", "/my_adres"),
+                bolmlar("payment", "Payment Methos", "/payment_methos"),
+                bolmlar("customer_service", "Customer Service", "/customer_password"),
+                bolmlar("change_password", "Change Password", "/change_password"),
+                logout("logout", "Logout", "/sing_in"),
               ],
             ),
           ),
@@ -93,6 +93,29 @@ class _MainProfilePageState extends State<MainProfilePage> {
       ),
       onTap: () {
         Navigator.pushNamed(context, routeName);
+      },
+    );
+  }
+
+  InkWell logout(icon, text, routeName) {
+    return InkWell(
+      child: SizedBox(
+        height: MediaQuery.of(context).size.height * 0.068,
+        child: Row(
+          children: [
+            SvgPicture.asset("assets/icons/$icon.svg"),
+            SizedBox(width: MediaQuery.of(context).size.height * 0.020),
+            Text(text,
+                style: const TextStyle(
+                    fontSize: FontConst.kMediumFont,
+                    fontWeight: FontWeight.w600)),
+            const Expanded(child: SizedBox()),
+            SvgPicture.asset("assets/icons/right.svg"),
+          ],
+        ),
+      ),
+      onTap: () {
+        Navigator.pushNamedAndRemoveUntil(context, routeName, (route) => false);
       },
     );
   }

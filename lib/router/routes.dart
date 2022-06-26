@@ -15,7 +15,12 @@ import 'package:organico_exem_/Screen/Home/home/view/cupon_home_view_page.dart';
 import 'package:organico_exem_/Screen/Home/main_navigator_page.dart';
 import 'package:organico_exem_/Screen/Home/profil/notification/notfication_settings_profil.dart';
 import 'package:organico_exem_/Screen/Home/profil/notification/notification_profil_page.dart';
+import 'package:organico_exem_/Screen/Home/profil/pages/change_passworde_profil_page.dart';
+import 'package:organico_exem_/Screen/Home/profil/pages/customer_servis_profil_page.dart';
 import 'package:organico_exem_/Screen/Home/profil/pages/edit_profil_page.dart';
+import 'package:organico_exem_/Screen/Home/profil/pages/my_addres_profil_page.dart';
+import 'package:organico_exem_/Screen/Home/profil/pages/my_orders_profil_page.dart';
+import 'package:organico_exem_/Screen/Home/profil/pages/payment_mothos_profil_page.dart';
 import 'package:organico_exem_/Screen/Home/profil/profil_main_page.dart';
 
 class MyRoutes {
@@ -67,6 +72,19 @@ class MyRoutes {
             builder: (context) => MainProfilNotficatonSettingsPage());
       case "/edit_profil":
         return MaterialPageRoute(builder: (context) => EditProfilePage());
-    }
+      case "/profil_order":
+        return MaterialPageRoute(builder: (context) => MyOrderProfilPage());
+      case "/customer_password":
+        return MaterialPageRoute(
+            builder: (context) => CustomerServiceProfilPage());
+      case "/my_adres":
+        return MaterialPageRoute(builder: (context) => MyAddressProfilPage());
+      case "/payment_methos":
+        return MaterialPageRoute(
+            builder: (context) => PaymentMethodProfilPage());
+      case "/change_password":
+        return MaterialPageRoute(
+            builder: (context) => ChangePasswordProfilPage());
+    } 
   }
 }

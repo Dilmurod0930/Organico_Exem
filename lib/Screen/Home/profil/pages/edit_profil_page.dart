@@ -4,6 +4,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:organico_exem_/Screen/Home/home/cubit/main_home_cubit.dart';
 import 'package:organico_exem_/Screen/Home/home/state/main_home_state.dart';
 import 'package:organico_exem_/core/base/base_view.dart';
+import 'package:organico_exem_/core/constants/const.dart';
 
 class EditProfilePage extends StatefulWidget {
   const EditProfilePage({Key? key}) : super(key: key);
@@ -31,8 +32,22 @@ class _EditProfilePageState extends State<EditProfilePage> {
                         SizedBox(
                           height: 24,
                         ),
-                        // backAndTitleMethod("Adit Profile"),
-                        SizedBox(height: 62),
+                         Row(
+                        children: [
+                          IconButton(
+                              onPressed: () {
+                                Navigator.pushNamedAndRemoveUntil(
+                                    context, '/my_bag', (route) => false);
+                              },
+                              icon: const Icon(Icons.chevron_left)),
+                          const Text("My Orders ",
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                  fontSize: FontConst.kMediumFont + 2,
+                                  fontWeight: FontWeight.w600)),
+                        ],
+                      ),
+                        SizedBox(height: 32),
                         Center(
                           child: SizedBox(
                             height: 170,
