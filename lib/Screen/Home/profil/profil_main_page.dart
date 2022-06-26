@@ -58,7 +58,7 @@ class _MainProfilePageState extends State<MainProfilePage> {
                         fontWeight: FontWeight.w700,
                         color: ColorConst.greyConst)),
                 SizedBox(height: MediaQuery.of(context).size.height * 0.044),
-                bolmlar("edit_profile", "Edit Profile", "edit_profile"),
+                bolmlar("edit_profile", "Edit Profile", "/edit_profil"),
                 bolmlar("my_orders", "My orders", "my_order"),
                 bolmlar("my_wishlist", "My Wishlist", "wishlist"),
                 bolmlar("address", "My Address", "adres"),
@@ -92,7 +92,7 @@ class _MainProfilePageState extends State<MainProfilePage> {
         ),
       ),
       onTap: () {
-        Navigator.pushNamedAndRemoveUntil(context, routeName, (route) => false);
+        Navigator.pushNamed(context, routeName);
       },
     );
   }

@@ -35,13 +35,21 @@ class _CartMyBagPageState extends State<CartMyBagPage> {
                       children: [
                         SizedBox(
                             height: MediaQuery.of(context).size.height * 0.06),
-                          Row(children: [IconButton(onPressed: (){
-                            Navigator.pushNamedAndRemoveUntil(context, '/cart', (route) => false);
-                          }, icon:  const Icon(Icons.chevron_left)), const Text("My Bag",
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                        fontSize: FontConst.kMediumFont + 2,
-                        fontWeight: FontWeight.w600)),],),
+                        Row(
+                          children: [
+                            IconButton(
+                                onPressed: () {
+                                  Navigator.pushNamedAndRemoveUntil(
+                                      context, '/main', (route) => false);
+                                },
+                                icon: const Icon(Icons.chevron_left)),
+                            const Text("My Bag",
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                    fontSize: FontConst.kMediumFont + 2,
+                                    fontWeight: FontWeight.w600)),
+                          ],
+                        ),
                         SizedBox(
                             height: MediaQuery.of(context).size.height * 0.028),
 
@@ -275,14 +283,19 @@ class _CartMyBagPageState extends State<CartMyBagPage> {
                         InkWell(
                           child: Container(
                             height: MediaQuery.of(context).size.height * 0.065,
-                            width: MediaQuery.of(context).size.width * 0.6,
+                            width: MediaQuery.of(context).size.width * 0.9,
                             decoration: BoxDecoration(
                                 color: ColorConst.redConst,
                                 borderRadius: BorderRadius.circular(20)),
-                            child: const Center(child: Text("Add to bag")),
+                            child: Center(
+                              child: Text(
+                                "Order now",
+                                style: TextStyle(color: ColorConst.whiteConst),
+                              ),
+                            ),
                           ),
                           onTap: () {
-                            // NavigationService.instance.pushNamed("my_orders");
+                            Navigator.pushNamed(context, '/order');
                           },
                         ),
                         SizedBox(

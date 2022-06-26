@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:organico_exem_/Screen/Auth/Sign_In/otac_number.dart';
 import 'package:organico_exem_/Screen/Auth/Sign_In/forgot_pass_page.dart';
@@ -8,6 +7,7 @@ import 'package:organico_exem_/Screen/Auth/Sign_In/sign_in_page.dart';
 import 'package:organico_exem_/Screen/Auth/Splash/splash_auth.dart';
 import 'package:organico_exem_/Screen/Home/cart/cart_main_page.dart';
 import 'package:organico_exem_/Screen/Home/cart/my_bag_cart_page.dart';
+import 'package:organico_exem_/Screen/Home/cart/my_orders_cart_page.dart';
 import 'package:organico_exem_/Screen/Home/home/view/categorya/fruits_home_category_pages.dart';
 import 'package:organico_exem_/Screen/Home/home/view/categorya/meats_home_category_page.dart';
 import 'package:organico_exem_/Screen/Home/home/view/categorya/vegerabls_home_category_page.dart';
@@ -15,6 +15,7 @@ import 'package:organico_exem_/Screen/Home/home/view/cupon_home_view_page.dart';
 import 'package:organico_exem_/Screen/Home/main_navigator_page.dart';
 import 'package:organico_exem_/Screen/Home/profil/notification/notfication_settings_profil.dart';
 import 'package:organico_exem_/Screen/Home/profil/notification/notification_profil_page.dart';
+import 'package:organico_exem_/Screen/Home/profil/pages/edit_profil_page.dart';
 import 'package:organico_exem_/Screen/Home/profil/profil_main_page.dart';
 
 class MyRoutes {
@@ -54,6 +55,8 @@ class MyRoutes {
         return MaterialPageRoute(builder: (context) => CartHomePage());
       case "/my_order":
         return MaterialPageRoute(builder: (context) => CartHomePage());
+      case "/order":
+        return MaterialPageRoute(builder: (context) => CartMyOrdersPage());
       case "/profil":
         return MaterialPageRoute(builder: (context) => MainProfilePage());
       case "/notifi":
@@ -62,6 +65,8 @@ class MyRoutes {
       case "/notifi_setting":
         return MaterialPageRoute(
             builder: (context) => MainProfilNotficatonSettingsPage());
+      case "/edit_profil":
+        return MaterialPageRoute(builder: (context) => EditProfilePage());
     }
   }
 }

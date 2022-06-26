@@ -240,7 +240,7 @@ class _CartHomePageState extends State<CartHomePage> {
                           decoration: BoxDecoration(
                               color: ColorConst.redConst,
                               borderRadius: BorderRadius.circular(20)),
-                          child: const Center(child: Text("Add to bag")),
+                          child:  Center(child: Text("Add to bag", style: TextStyle(color: ColorConst.whiteConst),)),
                         ),
                         onTap: () {
                           Navigator.pushNamedAndRemoveUntil(

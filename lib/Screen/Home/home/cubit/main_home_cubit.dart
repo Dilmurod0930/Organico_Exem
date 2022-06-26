@@ -8,6 +8,14 @@ class HomeScreenCubit extends Cubit<MainHomeState> {
   HomeScreenCubit() : super(MainHomeInitial());
   TextEditingController searchController = TextEditingController();
 
+  final nameControlller = TextEditingController(text: "Joe doe");
+  final phoneControlller =
+      TextEditingController(text: "998994878083");
+  final addressControlller =
+      TextEditingController(text: "rgjnkfgnmdklfgndklfngldfkngdklfgndlkfgndklfgndklfndklfgndlkfngdlkgnldkfngdlkfgndlkgndlkgndf");
+  final codeController = TextEditingController();
+  
+
   moveToSearchPage() {
     emit(MainHomeSearch());
   }

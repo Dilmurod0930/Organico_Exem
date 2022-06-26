@@ -38,7 +38,7 @@ class CuponHomePage extends StatelessWidget {
                       ),
                       const SizedBox(width: 55),
                       const Text(
-                        "Forgot Password",
+                        "Your Coupon ",
                         style: TextStyle(
                           fontSize: FontConst.kLargeFont,
                           fontWeight: FontWeight.bold,
