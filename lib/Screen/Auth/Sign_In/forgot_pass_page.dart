@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:organico_exem_/Screen/Auth/Cubit/auth_cubit.dart';
+import 'package:organico_exem_/Screen/Auth/ImputFilde/imput_fild.dart';
 import 'package:organico_exem_/Screen/Auth/State/auth_state.dart';
 import 'package:organico_exem_/core/base/base_view.dart';
 import 'package:organico_exem_/core/constants/const.dart';
@@ -79,6 +80,7 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
                           SizedBox(
                               height:
                                   MediaQuery.of(context).size.height * 0.060),
+                                  phoneInput(phoneNumber),
                           SizedBox(
                               height:
                                   MediaQuery.of(context).size.height * 0.060),

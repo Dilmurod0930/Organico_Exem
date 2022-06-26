@@ -35,8 +35,6 @@ class _SignInPageAuthState extends State<SignInPageAuth> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        SizedBox(
-                            height: MediaQuery.of(context).size.height * 0.045),
                         Padding(
                           padding: PaddingMargenConst.kMediumPM,
                           child:
@@ -156,16 +154,13 @@ class _SignInPageAuthState extends State<SignInPageAuth> {
                                 color: ColorConst.redConst,
                                 borderRadius: BorderRadius.circular(25)),
                             child: Center(
-                              child: TextButton(
-                                child: Text(
-                                  "Sign In",
-                                  style: TextStyle(
-                                    color: ColorConst.whiteConst,
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: FontConst.kMediumFont,
-                                  ),
+                              child: Text(
+                                "Sign In",
+                                style: TextStyle(
+                                  color: ColorConst.whiteConst,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: FontConst.kMediumFont,
                                 ),
-                                onPressed: () {},
                               ),
                             ),
                           ),
@@ -173,6 +168,11 @@ class _SignInPageAuthState extends State<SignInPageAuth> {
                             Navigator.pushNamedAndRemoveUntil(
                                 context, '/main', (route) => false);
                           },
+                          
+                        ),
+                        Center(
+                          child: TextButton(onPressed: (){Navigator.pushNamedAndRemoveUntil(
+                                  context, '/sign_in', (route) => false);}, child:  Text("Sign Up", style: TextStyle(color: ColorConst.blueConst),)),
                         )
                       ],
                     ),

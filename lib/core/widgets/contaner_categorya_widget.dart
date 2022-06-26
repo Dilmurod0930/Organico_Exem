@@ -8,7 +8,11 @@ import 'package:organico_exem_/core/constants/const.dart';
 class CategoriesWidget extends StatelessWidget {
   final int index;
   const CategoriesWidget({Key? key, required this.index}) : super(key: key);
-
+static List<Color> cuponColor = [
+    const Color(0xffE2ECE2),
+    const Color(0xFFF2D9De),
+    const Color(0xFFFEDBDA) 
+  ];
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -31,7 +35,7 @@ class CategoriesWidget extends StatelessWidget {
           width: MediaQuery.of(context).size.width * 0.32,
           decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
-              color: ColorConst.yellowConst),
+              color: cuponColor[index] ),
           child: Center(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
