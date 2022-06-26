@@ -35,7 +35,7 @@ class _EditProfilePageState extends State<EditProfilePage> {
                             IconButton(
                                 onPressed: () {
                                   Navigator.pushNamedAndRemoveUntil(
-                                      context, '/profil', (route) => false);
+                                      context, '/main', (route) => false);
                                 },
                                 icon: const Icon(Icons.chevron_left)),
                             const Text("Edit Profile ",

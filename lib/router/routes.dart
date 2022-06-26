@@ -15,7 +15,7 @@ import 'package:organico_exem_/Screen/Home/home/view/cupon_home_view_page.dart';
 import 'package:organico_exem_/Screen/Home/main_navigator_page.dart';
 import 'package:organico_exem_/Screen/Home/profil/notification/notfication_settings_profil.dart';
 import 'package:organico_exem_/Screen/Home/profil/notification/notification_profil_page.dart';
-import 'package:organico_exem_/Screen/Home/profil/pages/change_passworde_profil_page.dart';
+import 'package:organico_exem_/Screen/Home/profil/pages/Chang_password/change_passworde_profil_page.dart';
 import 'package:organico_exem_/Screen/Home/profil/pages/customer_servis_profil_page.dart';
 import 'package:organico_exem_/Screen/Home/profil/pages/edit_profil/edit_profil_page.dart';
 import 'package:organico_exem_/Screen/Home/profil/pages/my_addres_profil_page.dart';

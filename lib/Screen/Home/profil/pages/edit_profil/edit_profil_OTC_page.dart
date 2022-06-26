@@ -34,7 +34,7 @@ class _OTCPasswordProfilPageState extends State<OTCPasswordProfilPage> {
                             IconButton(
                                 onPressed: () {
                                   Navigator.pushNamedAndRemoveUntil(
-                                      context, '/profil', (route) => false);
+                                      context, '/main', (route) => false);
                                 },
                                 icon: const Icon(Icons.chevron_left)),
                             const Text("Customer Service ",

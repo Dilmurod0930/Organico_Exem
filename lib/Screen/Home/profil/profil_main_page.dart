@@ -14,14 +14,14 @@ class _MainProfilePageState extends State<MainProfilePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Padding(
-        padding: const EdgeInsets.all(8.0),
+        padding: const EdgeInsets.all(18.0),
         child: SingleChildScrollView(
           child: SizedBox(
             child: Column(
               children: [
                 SizedBox(height: MediaQuery.of(context).size.height * 0.024),
                 SizedBox(
-                  height: MediaQuery.of(context).size.height * 0.065,
+                  height: MediaQuery.of(context).size.height * 0.045,
                   child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
