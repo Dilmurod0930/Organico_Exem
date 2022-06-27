@@ -41,6 +41,7 @@ class _MainProfilePageState extends State<MainProfilePage> {
                 SizedBox(height: MediaQuery.of(context).size.height * 0.0028),
                 CircleAvatar(
                   radius: MediaQuery.of(context).size.height * 0.065,
+                  backgroundImage: NetworkImage(""),
                 ),
                 SizedBox(
                   height: MediaQuery.of(context).size.height * 0.024,

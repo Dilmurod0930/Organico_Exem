@@ -2,17 +2,16 @@ import 'dart:math';
 import 'package:bloc/bloc.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:organico_exem_/Screen/Home/home/state/main_home_state.dart';
-import 'package:organico_exem_/core/constants/const.dart';
 
 class HomeScreenCubit extends Cubit<MainHomeState> {
   HomeScreenCubit() : super(MainHomeInitial());
   TextEditingController searchController = TextEditingController();
 
-  final nameControlller = TextEditingController(text: "Joe doe");
+  final nameControlller = TextEditingController(text: "Dima Dev");
   final phoneControlller =
-      TextEditingController(text: "998994878083");
+      TextEditingController(text: "+998 93 098-17-30");
   final addressControlller =
-      TextEditingController(text: "rgjnkfgnmdklfgndklfngldfkngdklfgndlkfgndklfgndklfndklfgndlkfngdlkgnldkfngdlkfgndlkgndlkgndf");
+      TextEditingController(text: "Samarqand Viloyat  Urgut Tuman  Zarafshon MFY");
   final codeController = TextEditingController();
   
 
