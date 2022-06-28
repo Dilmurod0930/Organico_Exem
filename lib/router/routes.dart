@@ -20,7 +20,8 @@ import 'package:organico_exem_/Screen/Home/profil/pages/customer_servis_profil_p
 import 'package:organico_exem_/Screen/Home/profil/pages/edit_profil/edit_profil_page.dart';
 import 'package:organico_exem_/Screen/Home/profil/pages/my_addres_profil_page.dart';
 import 'package:organico_exem_/Screen/Home/profil/pages/my_orders_profil_page.dart';
-import 'package:organico_exem_/Screen/Home/profil/pages/payment_mothos_profil_page.dart';
+import 'package:organico_exem_/Screen/Home/profil/pages/payment/payment_mothos_Pages.dart';
+import 'package:organico_exem_/Screen/Home/profil/pages/payment/payment_mothos_profil_page.dart';
 import 'package:organico_exem_/Screen/Home/profil/profil_main_page.dart';
 
 class MyRoutes {
@@ -85,6 +86,10 @@ class MyRoutes {
       case "/change_password":
         return MaterialPageRoute(
             builder: (context) => ChangePasswordProfilPage());
-    } 
+      case "/addMthos2":
+        return MaterialPageRoute(
+            builder: ((context) =>
+                AddPaymentMethodPage2(forcontext: args as BuildContext)));
+    }
   }
 }

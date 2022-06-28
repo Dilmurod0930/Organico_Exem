@@ -66,7 +66,7 @@ class _PaymentMethodProfilPageState extends State<PaymentMethodProfilPage> {
                             ),
                           ),
                           onTap: () {
-                            Navigator.pushNamed(context, '/');
+                            Navigator.pushNamed(context, '/addMthos2');
                           },
                         ),
                       ],

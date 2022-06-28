@@ -44,6 +44,9 @@ class HomeScreenCubit extends Cubit<MainHomeState> {
     'assets/images/banana.svg',
     'assets/images/meat.svg',
   ];
-
+  String groupValue = "radios";
+void radioButton(dynamic v) {
+    groupValue = v;
+  }
 
 }
